@@ -1,6 +1,4 @@
 import React,{Component} from 'react';
-//import logo from './logo.svg';
-//import './App.css';
 import store  from './store'
 import {Provider} from 'react-redux'
 import { connect } from 'react-redux';
@@ -61,9 +59,9 @@ class App extends Component{
           
             <select onChange={this.updateSelection} value={this.state.value} >
 
-            <option key={-1} value="">-- pick a model --</option>
+              <option key={-1} value="">-- pick a model --</option>
 
-            {Object.entries(data).map(([key,val]) => <option key={key} value={key} >{key} ({val.year})</option>)}              
+              {Object.entries(data).map(([key,val]) => <option key={key} value={key} >{key} ({val.year})</option>)}              
               
             </select>
             <button onClick={this.onAddModel} disabled={this.state.value===""}>add</button>
