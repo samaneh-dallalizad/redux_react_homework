@@ -1,0 +1,16 @@
+ul {
+    text-align: left
+}
+.ModelDetails {
+    width: 350px;
+    margin: auto;
+}
+.App{
+    width:50%;
+    margin:0 auto;
+    padding:40px 0;
+    font-size:20 px; 
+    text-align: center
+}
+select {padding:10px 0;}
+button {padding:10px ;margin:0 2px; }
